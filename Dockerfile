@@ -8,7 +8,7 @@ RUN rm -rf /usr/local/tomcat/webapps/*
 COPY target/*.war /usr/local/tomcat/webapps/ROOT.war
 
 #Expose tomcat port
-EXPOSE 8081
+EXPOSE 8080
 
 #start tomcat
 CMD ["catalina.sh",run]
